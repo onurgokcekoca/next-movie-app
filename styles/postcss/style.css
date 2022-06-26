@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;500&display=swap');
+
+/* component */
+@import "../components/navbar.css";
+@import "../components/header.css";
+@import "../components/movies.css";
+@import "../components/movieCard.css";
+
+/* pages */
+@import "../pages/contents.css";
+@import "../pages/notFound.css";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+body{
+    background-color: #222B31;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    html{
+        font-size: 62.5%;
+    }
+
+    nav{
+        font-size: 1.7rem;
+    }
+
+    .movies .movie-card{
+        flex-basis: 30% ;
+    }
+    .contents{
+        font-size: 1.7rem;
+        flex-direction: column;
+    }
+
+    .contents .texts{
+        margin: 1rem 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .movies .movie-card{
+        flex-basis: 90% ;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    nav{
+        font-size: 0.8rem;
+    }
+    .contents{
+        font-size: 1rem;
+    }
+
+    
+}

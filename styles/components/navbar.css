@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF424F;
+    padding: 1rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    -webkit-animation: example 2s linear infinite;
+            animation: example 2s linear infinite;
+  }
+  
+  @-webkit-keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

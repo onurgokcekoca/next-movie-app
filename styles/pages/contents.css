@@ -1,0 +1,49 @@
+.contents{
+    display: flex;
+    padding: 1rem;
+}
+
+.contents .texts{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents .texts h2{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contents .texts h4{
+    color: #fff;
+    opacity: 0.4;
+    letter-spacing: 2px;
+}
+
+.contents .texts .genres{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.contents .texts .genres .genre{
+    flex-basis: 15%;
+    color: #fff;
+}
+
+.contents .texts .genres .genre div{
+    border: 1px solid #fff;
+    min-width: 18vw;
+    margin: 0 1.5rem 1rem 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.contents .texts .overview{
+    color: #fff;
+    letter-spacing: 1px;
+}

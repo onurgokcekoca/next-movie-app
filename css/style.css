@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;500&display=swap');
+
+/* component */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF424F;
+    padding: 1rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    -webkit-animation: example 2s linear infinite;
+            animation: example 2s linear infinite;
+  }
+
+@-webkit-keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.header{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+}
+
+.movies{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.movies .movie-card{
+    flex-basis: 22%;
+    text-align: center;
+    margin-bottom: 3rem;
+    transition: 0.4s all;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 66, 79, 0.1);
+}
+
+.movies .movie-card:hover{
+    transform: translateY(-10px);
+    transform: scale(1.05);
+    border-color:  rgba(255, 66, 79, 0.6);
+
+
+}
+
+.explanation{
+    margin: 0.5rem 2rem;
+}
+
+.imdb{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.2rem 0.8rem;
+    border-radius: 10px;
+    background-color: #FF424F;
+}
+
+/* pages */
+
+.contents{
+    display: flex;
+    padding: 1rem;
+}
+
+.contents .texts{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents .texts h2{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contents .texts h4{
+    color: #fff;
+    opacity: 0.4;
+    letter-spacing: 2px;
+}
+
+.contents .texts .genres{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.contents .texts .genres .genre{
+    flex-basis: 15%;
+    color: #fff;
+}
+
+.contents .texts .genres .genre div{
+    border: 1px solid #fff;
+    min-width: 18vw;
+    margin: 0 1.5rem 1rem 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.contents .texts .overview{
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    color: #fff;
+}
+
+.not-found .number{
+    font-size: 7rem;
+    color: #FF424F;
+}
+
+.not-found .number span{
+    color: #fff;
+}
+
+.not-found p.text{
+    margin: 1rem 0;
+}
+
+.not-found a{
+    color: #FF424F;
+    -webkit-animation: example 2s linear infinite;
+    animation: example 2s linear infinite;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+@-webkit-keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+body{
+    background-color: #222B31;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    html{
+        font-size: 62.5%;
+    }
+
+    nav{
+        font-size: 1.7rem;
+    }
+
+    .movies .movie-card{
+        flex-basis: 30% ;
+    }
+    .contents{
+        font-size: 1.7rem;
+        flex-direction: column;
+    }
+
+    .contents .texts{
+        margin: 1rem 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .movies .movie-card{
+        flex-basis: 90% ;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    nav{
+        font-size: 0.8rem;
+    }
+    .contents{
+        font-size: 1rem;
+    }
+
+    
+}
