@@ -49,14 +49,14 @@ nav a {
     margin: 2rem 0;
 }
 
-.movies{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
+.movies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.movies .movie-card{
+.movies .movie-card {
     flex-basis: 22%;
     text-align: center;
     margin-bottom: 3rem;
@@ -66,15 +66,13 @@ nav a {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(255, 66, 79, 0.1);
-}
+  }
 
-.movies .movie-card:hover{
-    transform: translateY(-10px);
-    transform: scale(1.05);
-    border-color:  rgba(255, 66, 79, 0.6);
-
-
-}
+.movies .movie-card:hover {
+      transform: translateY(-10px);
+      transform: scale(1.05);
+      border-color: rgba(255, 66, 79, 0.6);
+    }
 
 .explanation{
     margin: 0.5rem 2rem;
